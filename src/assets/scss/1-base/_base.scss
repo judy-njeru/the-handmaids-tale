@@ -1,0 +1,35 @@
+// @import "../1-base/\ mediaqueries";
+@import "../1-base/colors";
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p,
+div,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.page-wrapper {
+    background-image: url(".././images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+
+    &.about {
+        padding-top: 300px;
+    }
+
+    div.cast {
+        padding-top: 250px;
+    }
+
+}
+
+
+// @media screen and (max-height: 500px) {
+//   display: none;
+
+// }

@@ -1,0 +1,58 @@
+div.abt-txt {
+    text-align: left;
+    color: $color_white;
+
+    div.row {
+        position: relative;
+        left: 0;
+        justify-content: space-between;
+
+
+        &:after {
+            display: table;
+            content: '';
+            position: absolute;
+            background-color: $color-red;
+            opacity: 0.2;
+            bottom: -7%;
+            left: 10%;
+            height: 180px;
+            width: 86%;
+            z-index: 0;
+        }
+
+        div.txt-col {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    div.abt-img {
+        position: relative;
+        height: 100%;
+
+        &:before {
+            display: table;
+            content: '';
+            position: absolute;
+            background-image: url(".././images/img-abt.jpeg");
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+
+        &:after {
+            display: table;
+            content: '';
+            position: absolute;
+            background-color: $color_green;
+            opacity: .6;
+            top: -6%;
+            left: -3%;
+            height: 100%;
+            width: 80%;
+            z-index: 1;
+        }
+    }
+}
